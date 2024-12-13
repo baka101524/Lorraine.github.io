@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Lorraine Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+
+<!--NAVIGATION MENU-->
+    
+       
+    <nav>
+        <div class="nav-container"> 
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500"><a href="lorraine.html">
+            <span>Rainy</span></a>
+        </div>
+    <div class="links">
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="lorraine.html">Home</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="About.html">About</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="Skills.html">Skills and Hobby</a></div>
+        <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="Contact.html">Contact</a></div>
+    </div>
+    <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+    </nav>
+
+    <section>
+    <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+            <img src="img/mei.png" alt="">
+        </div>
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Lorraine</span></h1>
+            <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="typewriter-text"> </span><label for="">|</label></div>
+            <script src="script.js"></script>
+            <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">I am a student in Bukidnon State University, a first year student under the Bachelor in Science of Information Technology. IN the BSIT 1B section<br> <br> </p>
+
+            <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1600">
+                <button class="confetti-button">Please Smile!</button>
+            </div>
+            <script src="https://run.confettipage.com/here.js" data-confetticode="U2FsdGVkX1/PlmY+LEQlQTdP0ZcsMPshukPi/YQObZNqYqaY1FtwuSXWqYnge9idPkBpjIyLkBxrgmET9lVPixCERKtL4sJc+GLtlecFtmuFZRDOhTYF61VJsw+E1Z83D7s3d7mnInfW/Qg5+lO3XXTJ+yLGrHLZqFOgwsXHSGqiqEzhdwffAgKPcEdLoqEiFzuPvJNfBG0NgixXSiMb0wBnhyf/AA0mrNdXmpryMG5RdptGtK0yHIymtYwfppmpnFT7qxl2BH30gCsbS5ASYiVlJFbtu5Rt4BDNbKVy4xyeNTugu4EG8JQcNvQBlFrV2+sfUft8BkNc1QExV9DdbHsobyp2FPxpRlzaH5OVgLENI/hQzsSNOlclEuEluI2iLNN/50xELDk9uTI5kfqd5NhCIvg2A6iATIPo2X2I+kQAfJliIQWZLD5duR+LqQzKwVnvugaqJU0SK6k3i5ZXC1Ax/Y981QNhSTNGZx9ULzBKo8oPaA9iXYjbCP7lI61EzJcvUduTh/PKcUEAoAghQme1GuaAaZy/U4vloGwPaKXVNOkNiZpH/ERjf/iYqi0ti6wslstMcNvVZm6avdDiVOvdmPsFbigOi405FylD1Ya54KA4iqnz/pzfD9LrXGmmXeaTNbkW8jEvJgZKbaiQLqjjSTJbFk8PMu32VC62q0YUKu4a+gFbl/kPMPkWweCGpAbz5VFgDB6XVdRFihNXMnUdHAi6lvK+3bGzCbPGYciUfUIuTAKgiQ6ainOMDgHSE98x/VfaT4Y62N7LG/6TD9Z48aXM7XEdznkq+zq9Of+lhkS9qIHZ1w1ah8V4mngEC9AvOsDYZZY0lS2zhFapAP0XqD3UKLzFXxmoBxza2BeP/JdwnzV/Vjk+qaUf/NoAHt1VLat80s2qbYNaIBoGWvgBDnZnNgx65Mcb6hbB7u6PiMZRpAeHZWSkmjiLmE6rlsPW90PwuHWDQua01oLosR+oRChabxRrpeLpIEsRiBA="></script>
+            <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+            <script>
+                document.getElementsByClassName("confetti-button")[0].addEventListener("click", () => {
+                    let canvas = document.createElement("canvas");
+                    canvas.width = 600;
+                    canvas.height = 600;
+                    let container = document.getElementsByClassName("button")[0];
+                    container.appendChild(canvas);
+
+                    let confetti_button = confetti.create(canvas);
+                    confetti_button({
+                        particleCount: 200,
+                        spread: 200,
+                        startVelocity: 15,
+                        scalar: 0.9,
+                        ticks: 90
+                    }).then(() => container.removeChild(canvas));
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+   
+
+    <!--FOOTER STARTS HERE-->
+    <footer>
+        <div class="text">
+            <span>Created By 
+                <a href="#">RainyOnTheRainyDays</a>
+            &#169; 2024 All Rights Reserved</span>
+        </div>
+    </footer>
+   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  
+</body>
+</html>
